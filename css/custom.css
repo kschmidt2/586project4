@@ -6,9 +6,25 @@ body {
   font-family: 'Roboto Condensed', sans-serif;
 }
 
+#desktop {
+  display: none;
+  margin: 10px;
+  padding-top: 10px;
+  font-weight: 700;
+}
+
 #main {
   margin-top: 1em;
   margin-bottom: 1em;
+}
+
+@media (min-width: 700px) {
+    #main {
+        display: none;
+    }
+    #desktop {
+        display: inline;
+    }
 }
 
 .btn {
