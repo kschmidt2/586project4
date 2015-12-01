@@ -1,0 +1,316 @@
+@charset "UTF-8";
+
+body {
+  background: #090909;
+  color: #fff;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+#main {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.btn {
+  margin: 0;
+  border-radius: 0;
+  background-color: #333;
+  border: 0;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.smallcolumnpadding {
+  padding: 0 2px;
+}
+
+.container-narrow {
+  /*margin-left: 2%;
+  margin-right: 2%;*/
+  margin-top: 2em;
+  margin-bottom: 1em;
+  background-color: #000;
+  padding: 1em;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  /*color: black;*/
+}
+
+h1 {
+  font-size: 1.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  -webkit-margin-before: 0em;
+}
+
+h2 {
+  font-size: 1.3em;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: .2em;
+}
+
+h3 {
+  font-size: 1em;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: .2em;
+}
+
+.dropcap {
+  float: left;
+  font-size: 5em;
+  font-weight: 700;
+  line-height: .8em;
+  /*margin-top: 14px;*/
+  margin-right: 5px;
+  color: #f7f8a2;
+}
+
+.padding-bottom {
+  padding-bottom: 2em;
+}
+
+#map {
+  width: 100%;
+  height: 300px;
+  margin-top: 1em;
+}
+
+#div0, #div1, #div2, #div3, #div4, #div5, #div6, #div7, #flickrinfo {
+  width: 100%;
+  margin-bottom: 1em;
+  padding: 1em;
+  background-color: #333;
+}
+
+#div1, #div2, #div3, #div4, #div5, #div6, #div7 {
+  display: none;
+}
+
+#flickr, #instagram, #nytimes, #twitter {
+  width: 100%;
+  height: 500px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  margin-top: 1em;
+}
+
+.flickrinfo {
+  width: 100%;
+  margin-bottom: 2em;
+  padding: 1em;
+  background-color: #333;
+}
+
+#twitter iframe {
+  width: 100%;
+  height: 500px;
+  border: 0px;
+  -webkit-overflow-scrolling: touch;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+/*NY Times styles*/
+
+.sectionname {
+  text-transform: uppercase;
+  color: #f7f8a2;
+  margin-bottom: .3em;
+}
+
+.nytheadline {
+  font-size: 1.5em;
+  font-weight: 700;
+  line-height: 1.2em;
+  margin-bottom: .3em;
+}
+
+.nytheadline a {
+  color: #fff;
+}
+
+.nytheadline a:hover {
+  color: #f7f8a2;
+  text-decoration: none;
+}
+
+.byline {
+  text-transform: uppercase;
+}
+
+.date {
+  margin-bottom: .3em;
+  color: #aaa;
+}
+
+/*twitter styles*/
+
+.twitteruserphoto {
+  float: left;
+  margin-right: 1em;
+  margin-bottom: .5em;
+}
+
+.twittername {
+  font-size: 1.5em;
+  color: #f7f8a2;
+  font-weight: 700;
+  margin-bottom: .1em;
+}
+
+.twittername a {
+  color: #f7f8a2;
+}
+
+.twittername a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.twitteruser {
+  font-weight: 300;
+  margin-bottom: .5em;
+}
+
+.twitteruser a {
+  color: #fff;
+}
+
+.twitteruser a:hover {
+  text-decoration: none;
+  color: #f7f8a2;
+}
+
+.twittertext {
+  margin-bottom: .2em;
+}
+
+.twittertext a {
+  font-weight: 700;
+  color: #fff;
+}
+
+.twittertext a:hover {
+  text-decoration: underline;
+  color: #f7f8a2;
+}
+
+.twittertime {
+  font-size: .7em;
+  margin-bottom: .5em;
+}
+
+.twittertime a {
+  color: #fff;
+}
+
+.twittertime a:hover {
+  text-decoration: underline;
+}
+
+.twittertime a:visited {
+  text-decoration: none;
+}
+
+.twitterphoto {
+  /*max-width: 50%;*/
+}
+
+.twitterline {
+  border-bottom: 1px dashed #fff;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+
+/* begin transitions */
+
+.m-scene .scene_element {
+  -webkit-animation-duration: .8s;
+  -webkit-transition-timing-function: ease-in;
+  -webkit-animation-fill-mode: both;
+  animation-duration: .8s;
+  transition-timing-function: ease-in;
+  animation-fill-mode: both;
+}
+
+.m-scene .scene_element--slideinup {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+.m-scene.is-exiting .scene_element {
+  -webkit-animation-direction: alternate-reverse;
+  animation-direction: alternate-reverse;
+}
+
+.m-scene .scene_element .scene_element--fadein {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+/*
+ * Keyframes
+ */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}

@@ -1,0 +1,177 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terror: One Night in Paris</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:700,300,400' rel='stylesheet' type='text/css'>
+    <script src="js/respond.js"></script>
+</head>
+
+<body>
+
+  <div id="main" class="m-scene">
+
+    <div id="header scene_element scene_element--slideinup">
+      <a href="#indexid" class="active" aria-controls="home" role="button" data-toggle="tab"><img src="images/parisimage.jpg" class="img-responsive"></a>
+    </div>
+
+    <div class="container">
+
+      <div class="row">
+        <div class="col-xs-4 smallcolumnpadding">
+          <a class="btn btn-default btn-block" href="#newsid" role="button" aria-controls="news" data-toggle="tab">In the news</a>
+        </div>
+        <div class="col-xs-4 smallcolumnpadding">
+          <a class="btn btn-default btn-block pictures" href="#picturesid" role="button" aria-controls="pictures" data-toggle="tab">In pictures</a>
+        </div>
+        <div class="col-xs-4 smallcolumnpadding">
+          <a class="btn btn-default btn-block" href="#twitterid" role="button" aria-controls="tweets" data-toggle="tab">In tweets</a>
+        </div>
+      </div>
+
+      <div class="tab-content">
+
+        <div id="indexid" class="tab-pane active">
+          <div class="container-narrow scene_element scene_element--slideinup">
+            <div class="row">
+              <div class="col-xs-12 col-sm-6 col-md-12 padding-bottom">
+                <span class="dropcap">O</span>n the night of Friday, November 13, 2015, terrorists attacked several popular locations throughout Paris,
+                including a soccer stadium hosting a France-Germany friendly, a concert hall hosting a metal concert and
+                several restaurants, killing 129 people and wounding hundreds of others. Shortly after news of the attacks
+                spread throughout the world, the Islamic State, known as ISIS or ISIL, claimed responsibility for the deadliest
+                attacks on Paris since World War II. Click on the map below to read about what happened at each target and follow
+                this app to stay up-to-date on what's happening in the aftermath of the assault on France's capital.
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-12">
+                <h1>Where the attacks took place</h1>
+                <div id="map"></div>
+                <div id="div0">
+                  Click on the map markers to view information about the attacks at each location.
+                </div>
+                <div id="div1">
+                  <h2>Stade de France</h2>
+                  <h3>9:20 p.m., 9:30 p.m., 9:53 p.m.</h3>
+                  After being turned away by stadium security, a suicide bomber detonated an explosives belt outside of Gate D,
+                  killing himself and one victim. The blast could be heard inside the stadium, where France and Germany were playing
+                  an exhibition soccer match. President Francois Hollande, who was inside the stadium, made the quick decision to not
+                  alert the players and fans. The match continued and no one was allowed to leave the building. It wound up being the
+                  right call as ten minutes later, another suicide bomber struck outside of Gate H, killing only himself. Twenty-three
+                  minutes after the second bomb, another suicide bomber struck not far from the stadium, also killing only himself.
+                  The total death toll at the Stade de France, which holds over 81,000 fans, was only one. Had the stadium been
+                  evacuated, the death toll would have been much higher.
+                </div>
+                <div id="div2">
+                  <h2>Le Carillon</h2>
+                  <h3>9:25 p.m.</h3>
+                  Five minutes after the attacks began at Stade de France, gunmen in a black vehicle shot at diners sitting at Le Carillon
+                  and the nearby restaurant Le Petit Cambodge with assault rifles. The attack on the two restaurants killed 15 and left 10
+                  more seriously wounded.
+                </div>
+                <div id="div3">
+                  <h2>Le Petit Cambodge</h2>
+                  <h3>9:25 p.m.</h3>
+                  Five minutes after the attacks began at Stade de France, gunmen in a black vehicle shot at diners sitting at Le Petit
+                  Cambodge and the nearby restaurant Le Carillon with assault rifles. The attack on the two restaurants killed 15 and
+                  left 10 more seriously wounded.
+                </div>
+                <div id="div4">
+                  <h2>Cafe Bonne Bière</h2>
+                  <h3>9:32 p.m.</h3>
+                  Five diners were killed and eight more critically wounded when gunmen in a black vehicle opened fire at Cafe Bonne Bière.
+                </div>
+                <div id="div5">
+                  <h2>La Belle Equipe</h2>
+                  <h3>9:36 p.m.</h3>
+                  Gunmen in a black vehicle fired onto the terrace of La Belle Equipe, killing 19 people and critically wounding nine others.
+                </div>
+                <div id="div6">
+                  <h2>Comptoir Voltaire</h2>
+                  <h3>9:40 p.m.</h3>
+                  A suicide bomber detonated an explosive device at the Comptoir Voltaire restaurant, seriously wounding one person.
+                </div>
+                <div id="div7">
+                  <h2>Bataclan</h2>
+                  <h3>9:40 p.m.</h3>
+                  Three men attacked the Bataclan, a concert venue that holds 1,500 people, during a sold-out performance of the American
+                  band Eagles of Death Metal. They ran into the club's two-story ballroom throwing grenades and shooting the crowd
+                  throughout the hall. The band and some concertgoers escaped, but after the initial gunfire the gunmen began rounding up
+                  the remaining survivors and held them hostage as police officers amassed outside. Over two hours later, the police raided
+                  the concert hall. Two attackers exploded their suicide vests while the third attacker's was activated by police gunfire.
+                  The total death toll at the Bataclan was 89.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="newsid" class="tab-pane">
+          <div class="row scene_element scene_element--slideinup">
+            <div class="col-xs-12 col-sm-6">
+              <div class="container-narrow">
+                <h1>Latest stories from the New York Times</h1>
+                <!-- <h3>Recent photos tagged "Paris attacks"</h3>
+                <i>Click on image to view more information.</i> -->
+                <div id="nytimes"></div>
+              </div>
+            </div>
+            <!-- <div class="col-xs-12 col-sm-6">
+              <div class="container-narrow">
+                <h1>Latest stories from the Guardian</h1>
+                <div id="guardian"></div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+
+        <div id="picturesid" class="tab-pane">
+          <div class="row scene_element scene_element--slideinup">
+            <div class=" col-xs-12 col-sm-6">
+              <div class="container-narrow">
+                <h1>Photos from Flickr</h1>
+                <h3>Recent photos tagged "Paris attacks"</h3>
+                <i>Click on image to view more information.</i>
+                <div id="flickr"></div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+              <div class="container-narrow">
+                <h1>Photos from Instagram</h1>
+                <h3>Recent photos tagged #parisattacks</h3>
+                <i>Click on image to view more information.</i>
+                <div id="instagram"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="twitterid" class="tab-pane">
+          <div class="row scene_element scene_element--slideinup">
+            <div class=" col-xs-12 col-sm-6">
+              <div class="container-narrow">
+                <h1>Recently tagged #ParisAttacks</h1>
+                <div id="twitter"><iframe src="twitter.php"></iframe></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+<!-- javacript -->
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- <script src="js/smoothstate.js"></script> -->
+<script src="js/maps.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgip36ySsV2iBjvmbwh5WbnfIxlVHnV8U&callback=initMap"></script>
+<!-- <script src="js/custom.js"></script> -->
+<script src="js/news.js"></script>
+<script src="js/flickr.js"></script>
+</body>
+</html>
